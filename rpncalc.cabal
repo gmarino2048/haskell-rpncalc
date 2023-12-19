@@ -22,7 +22,7 @@ maintainer:         gmarino2048@gmail.com
 extra-source-files: CHANGELOG.md
 
 library
-    exposed-modules:  RPNCalc
+    exposed-modules:  RPNCalc, Result
 
     -- Modules included in this library but not exported.
     -- other-modules:

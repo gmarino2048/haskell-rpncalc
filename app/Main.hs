@@ -1,6 +1,7 @@
 module Main where
 
 import qualified RPNCalc
+import qualified Result (Result(..))
 import System.IO (hFlush, stdout)
 
 main :: IO ()
@@ -22,6 +23,6 @@ newLine = putStrLn ""
 
 calculateResult :: String -> String
 calculateResult expr = case RPNCalc.calculate expr of
-  RPNCalc.Ok value -> "-> " ++ show value
-  RPNCalc.Err errString -> "ERROR: " ++ errString
+  Result.Ok value -> "-> " ++ show value
+  Result.Err errString -> "ERROR: " ++ errString
 
